@@ -22,12 +22,12 @@ defmodule ExponentServerSdk.Mixfile do
   defp deps do
     [
       {:httpoison, ">= 1.2.0"},
-      {:poison, "~> 4.0.0"},
-#       {:dialyze, "~> 0.2.1", only: [:dev, :test]},
-#       {:credo, "~> 0.10.0", only: [:dev, :test]},
-#       {:mock, "~> 0.3.2", only: :test},
-#       {:ex_doc, ">= 0.0.0", only: [:dev, :test]},
-#       {:inch_ex, ">= 0.0.0", only: [:dev, :test]}
+      {:poison, "~> 4.0.0"}
+      #       {:dialyze, "~> 0.2.1", only: [:dev, :test]},
+      #       {:credo, "~> 0.10.0", only: [:dev, :test]},
+      #       {:mock, "~> 0.3.2", only: :test},
+      #       {:ex_doc, ">= 0.0.0", only: [:dev, :test]},
+      #       {:inch_ex, ">= 0.0.0", only: [:dev, :test]}
     ]
   end
 
