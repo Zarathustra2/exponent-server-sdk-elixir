@@ -5,7 +5,7 @@ defmodule ExponentServerSdk.Mixfile do
     [
       app: :exponent_server_sdk,
       version: "0.2.0",
-      elixir: "~> 1.10.4",
+      elixir: "~> 1.11",
       name: "ExponentServerSdk",
       description: "Exponent Push Notification API library for Elixir",
       source_url: "https://github.com/rdrop/exponent-server-sdk-elixir",
@@ -21,7 +21,7 @@ defmodule ExponentServerSdk.Mixfile do
 
   defp deps do
     [
-      {:httpoison, "~> 1.6"},
+      {:httpoison, "~> 1.8"},
       {:poison, "~> 4.0.0"}
       # {:dialyze, "~> 0.2.1", only: [:dev, :test]},
       # {:credo, "~> 0.10.0", only: [:dev, :test]},
