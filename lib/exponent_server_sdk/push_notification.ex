@@ -35,6 +35,15 @@ defmodule ExponentServerSdk.PushNotification do
     |> Parser.parse()
   end
 
+  def push_async(message, opts \\ []) when is_map(message) do
+    message
+    |> PushMessage.create()
+
+    opts = opts ++ [stream_to: self]
+
+    PushNotification.post!("send", message, [], opts)
+  end
+
   @doc """
   Send the push notification request when using a list of message maps
   """
