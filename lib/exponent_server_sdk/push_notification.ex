@@ -39,7 +39,7 @@ defmodule ExponentServerSdk.PushNotification do
     message
     |> PushMessage.create()
 
-    opts = opts ++ [stream_to: self]
+    opts = opts ++ [stream_to: self()]
 
     PushNotification.post!("send", message, [], opts)
   end
